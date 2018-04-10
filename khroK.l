@@ -8,6 +8,7 @@
  /*asoundc*/
 `                       {printf("។");}
 a01/" "                 {printf("ក");}
+a01/ov02                 {printf("ក");}
 a01/av[0-9]+            {printf("ក");}  
 a01/ov[0-9]+            {printf("គ");}
 a01                     {printf("គ");}
@@ -17,6 +18,7 @@ a02/ov[0-9]                     {printf("ឃ");}
 a16/ov[0-9]+                      {printf("ជ");} 
 a16/av[0-9]+|f[0-9]            {printf("ច");}     
 a03/av[0-9]+                     {printf("ឆ");}
+a03/" "                              {printf("ច");}
 a04/ov[0-9]+|av[0-9]+                     {printf("ឈ");}       
 a05                    {printf("ដ");}     
 a07/av[0-9]+            {printf("ណ");}
@@ -24,56 +26,50 @@ a07/ov[0-9]+|fv[0-9]+         {printf("ន");}
 a07                     {printf("ន");}
 a07ov02014/a07                     {printf("ន");}
 
-
+ /*special case*/
 a01av01/" "             {printf("ការ");}
-
 a07ov05a01/" "?"?"      {printf("នាក់");}
 a07ov05a01              {printf("អ្នក");}
+ov02o14" "              {printf("៏");}
+ /*special case*/
 
 a08/a08                 {printf("្ត");}          
-a08/ad" "?                     {printf("ត");}
+a08/ad[0-9]+" "?                     {printf("ត");}
 a08                   {printf("ត");}
+a08/sc03?o16         {printf("ធ");}
 a08/ad[0-9]+|ov[0-9]+|fv[0-9]+|f[0-9]+    {printf("ទ");}
 a08/a08fv[0-9]+         {printf("ទ");}     
 
 
 a09                     {printf("ថ");}
-" "a09                   {printf("ឋ");}
+a09                   {printf("ឋ");}
 a10                     {printf("ប");} 
 a11/a?|o?|av[0-9]+      {printf("ផ");}
 a11/ov[0-9]+|f[0-9]            {printf("ភ");} 
       
-a12                     {printf("ស");}
-a12" "                     {printf("ស់");}       
+ao12                     {printf("ស");}
+ao12" "                     {printf("ស់");}       
 a13                     {printf("ហ");}                  
-a14/av[0-9]+            {printf("ឡ");}  
+a14/av[0-9]+            {printf("ឡ");}
 a14/ov|od[0-9]+         {printf("ល");}
+
+ /*'a14      {printf("្ល");} */
+
 
 a14                     {printf("ល");}        
     /*a15              {printf("អ");}     */
 
 
 
- /*asoundsc */
-ac01               {printf("្ក");}     
-ac02               {printf("្ខ");}       
-ac03               {printf("្ច");}      
-ac04               {printf("្ឆ");}      
-ac05               {printf("្ដ");}      
-ac06               {printf("្ឋ");}      
-ac07               {printf("្ណ");}     
-ac08               {printf("្ត");}          
-ac09               {printf("្ថ");}       
-ac10              {printf("្ប");} 
-ac11              {printf("#");}      
-ac12              {printf("្ផ");}     
-ac13              {printf("្ហ");}                  
-ac14              {printf("្អ");}    
+   
 
 
  /*osoundc*/ 
-o01               {printf("គ");}      
-o02               {printf("ឃ");}      
+a01/ov[0-9]+               {printf("គ");}
+a01/av[0-9]+|ad[0-9]+               {printf("ក");}       
+o02/ov[0-9]+               {printf("ឃ");}
+a02/av[0-9]+      {printf("ខ");}
+a02      {printf("ខ");}
 o03               {printf("ង");}      
 o04               {printf("ជ");}     
 o05               {printf("ឈ");}    
@@ -90,27 +86,7 @@ o14              {printf("រ");}
 o16              {printf("វ");}
 o17              {printf("ឌ");}    
 o18              {printf("ឍ");}     
-
-
-    /*osoundsc*/
-oc01              {printf("្គ");}      
-oc02              {printf("្ឃ");}      
-oc03              {printf("្ង");}     
-oc04              {printf("្ជ");}    
-oc05              {printf("្ឈ");}  
-oc06              {printf("្ញ");}     
-oc07              {printf("្ទ");}
-oc08              {printf("​្ធ");}      
-oc09              {printf("្ន");}      
-oc10             {printf("្ព");}      
-oc11             {printf("្ភ");}     
-oc12             {printf("្ម");}      
-oc13             {printf("្យ");}     
-oc14             {printf("្រ");}     
-oc15             {printf("្ល");}      
-oc16             {printf("្វ");}
-oc17             {printf("្ឌ");}      
-oc18             {printf("្ឍ");}      
+   
 
 
  /*SCcombination*/
@@ -120,7 +96,11 @@ s2               {printf("ហ្ន");}
 s3               {printf("ហ្វ");}      
 s4               {printf("ហ្ស៊");}     
 
+ /*SC*/
 
+" "sc01              {printf("ឥ");}
+sc02             {printf("ឣ");}
+sc03             {printf("្");}
 
  /*fsoundv*/
 
@@ -143,7 +123,7 @@ av04                {printf("ុ");}
 av05               {printf("ូ");}     
 av06               {printf("ើ");} 
 av06/[-!$%^&*()_+|~=`{}\[\]:";'<>?,.\/]|[^a-zA-Z]              {printf("ើរ");}      
- /*av07                {printf("ា");}  */                
+av07                {printf("ី");}                
 ov08               {printf("ិ");}      
 fv09               {printf("័");} 
 fv10              {printf("ួ");}     
@@ -151,7 +131,7 @@ av10               {printf("ៃ");}
 ov11               {printf("ោ");}      
 av12               {printf("ៅ");}      
 
-
+ao12/av03      {printf("សុ");}
 
  /*osoundv*/
 ov01               {printf("ឺ");}
@@ -163,12 +143,16 @@ ov02                {printf("ុ");}
 ov03               {printf("ូ");}      
 ov04            {printf("ើ");}   
 ov05             {printf("ា");}                  
-ov06                {printf("ិ");}     
+ov06                {printf("ិ");} 
+
+
 ov07              {printf("ី");}
+
 ov08              {printf("ៃ");}     
 ov09               {printf("ោ");}     
 ov10               {printf("ៅ");}     
 ov12               {printf("េះ");}
+ov13               {printf("ូ");}
   /*adiafritics*/
 ad01              {printf("ុំ");}     
 ad02              {printf("ំ");}  
