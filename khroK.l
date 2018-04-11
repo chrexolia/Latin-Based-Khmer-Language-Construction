@@ -11,7 +11,7 @@ a01/" "                 {printf("ក");}
 a01/ov02                 {printf("ក");}
 a01/av[0-9]+            {printf("ក");}  
 a01/ov[0-9]+            {printf("គ");}
-a01                     {printf("គ");}
+a01                     {printf("ក");}
 a02/av[0-9]+                     {printf("ខ");}
 a02/ov[0-9]                     {printf("ឃ");}
  /*a03/ov[0-9]+            {printf("ជ");}     */ 
@@ -26,14 +26,14 @@ a07/ov[0-9]+|fv[0-9]+         {printf("ន");}
 a07                     {printf("ន");}
 a07ov02014/a07                     {printf("ន");}
 
+
  /*special case*/
-a01av01/" "             {printf("ការ");}
+a01ar01/" "             {printf("ការ");}
 a07ov05a01/" "?"?"      {printf("នាក់");}
 a07ov05a01              {printf("អ្នក");}
-ov02o14" "              {printf("៏");}
+a01ov02o14" "              {printf("ក៏");}
  /*special case*/
-
-a08/a08                 {printf("្ត");}          
+         
 a08/ad[0-9]+" "?                     {printf("ត");}
 a08                   {printf("ត");}
 a08/sc03?o16         {printf("ធ");}
@@ -52,6 +52,7 @@ ao12" "                     {printf("ស់");}
 a13                     {printf("ហ");}                  
 a14/av[0-9]+            {printf("ឡ");}
 a14/ov|od[0-9]+         {printf("ល");}
+sc03a14                {printf("្ល");}
 
  /*'a14      {printf("្ល");} */
 
@@ -61,8 +62,7 @@ a14                     {printf("ល");}
 
 
 
-   
-
+od07              {printf("េះ");}
 
  /*osoundc*/ 
 a01/ov[0-9]+               {printf("គ");}
@@ -78,8 +78,8 @@ o07               {printf("ទ");}
 o08/ov[0-9]+               {printf("ធ");}     
 o09               {printf("ន");}   
 o10             {printf("ព");}
-o11              {printf("ភ");}      
-o12              {printf("ម");}     
+o10              {printf("ភ");}      
+o12              {printf("ម");}    
 o13              {printf("យ");}     
 o14              {printf("រ");}      
  
@@ -102,6 +102,7 @@ s4               {printf("ហ្ស៊");}
 sc02             {printf("ឣ");}
 sc03             {printf("្");}
 
+
  /*fsoundv*/
 
 f01                {printf("ឹ");}      
@@ -116,7 +117,7 @@ f07               {printf("ឿ");}
 
  /*fsoundv*/
 av01               {printf("ា");}
-" "av01            {printf("ឣ");}                  
+ar01          {printf("ឣ");}                          
     /*av02                {printf("ិ");}   */  
 av03               {printf("ី");}      
 av04                {printf("ុ");}     
@@ -124,8 +125,7 @@ av05               {printf("ូ");}
 av06               {printf("ើ");} 
 av06/[-!$%^&*()_+|~=`{}\[\]:";'<>?,.\/]|[^a-zA-Z]              {printf("ើរ");}      
 av07                {printf("ី");}                
-ov08               {printf("ិ");}      
-fv09               {printf("័");} 
+ov08               {printf("ិ");}                    
 fv10              {printf("ួ");}     
 av10               {printf("ៃ");}      
 ov11               {printf("ោ");}      
@@ -136,19 +136,21 @@ ao12/av03      {printf("សុ");}
  /*osoundv*/
 ov01               {printf("ឺ");}
 ov01/o[0-9]+              {printf("ើ");}
-ov02a08/" "|[-!$%^&*()_+|~=`{}\[\]:";'<>?,.\/]                {printf("ត់");}
+ov02o14/a14                  {}
+ov02a08/" "|[-!$%^&*()_+|~=`{}\[\]:";'<>?,.\/]              {printf("ត់");}
 av05a10/" "|[-!$%^&*()_+|~=`{}\[\]:";'<>?,.\/]              {printf("ប់");}
 ov02a10/" "|[-!$%^&*()_+|~=`{}\[\]:";'<>?,.\/]              {printf("ប់");}
-ov02                {printf("ុ");}       
-ov03               {printf("ូ");}      
+ov02a07/" "|[-!$%^&*()_+|~=`{}\[\]:";'<>?,.\/]              {printf("ន់");}
+ov02                {printf("ុ");}  
+ov02/a01" "|a01ar01         {};
+ov02/o14" "         {};    
+ov02/ar01" "|a01av01        {};
+ov03               {printf("ាំ");}      
 ov04            {printf("ើ");}   
 ov05             {printf("ា");}                  
-ov06                {printf("ិ");} 
+ov06                                {printf("ិ");} 
 
-
-ov07              {printf("ី");}
-
-ov08              {printf("ៃ");}     
+ov07              {printf("ី");}     
 ov09               {printf("ោ");}     
 ov10               {printf("ៅ");}     
 ov12               {printf("េះ");}
@@ -157,8 +159,8 @@ ov13               {printf("ូ");}
 ad01              {printf("ុំ");}     
 ad02              {printf("ំ");}  
 ad03/a14|" "               {printf("ែ");}   
-ad03               {printf("ាំ");} 
-" "ad03" "?       {printf("ឯ");}
+ad03               {printf("ែ");} 
+sc04           {printf("ឯ");}
 ad04              {printf("ះ");}       
 ad05               {printf("ិះ");}      
 ad06               {printf("ុះ");}
@@ -173,7 +175,6 @@ od03              {printf("ាំ");}
 od04              {printf("ះ");}      
 od05              {printf("ិះ");}      
 od06              {printf("ុះ");}
-od07              {printf("េះ");}
 od08              {printf("េាះ");}
 
 

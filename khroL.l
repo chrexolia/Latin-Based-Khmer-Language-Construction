@@ -4,6 +4,7 @@
 %option noyywrap 
 %%
 
+
   /* num */
 
 
@@ -31,8 +32,7 @@ j                {fprintf(o2, "a16");}
 s                {fprintf(o2, "ao12");}
 b                {fprintf(o2, "a10");} 
 
- /*osoundc*/ 
-k                {fprintf(o2, "o01");}      
+ /*osoundc*/     
 kh               {fprintf(o2, "o02");}      
 ng               {fprintf(o2, "o03");}      
  /* ch               {fprintf(o2, "o04");} */ 
@@ -75,17 +75,19 @@ ear              {fprintf(o2, "f06");}
 
 
  /*asoundv*/
-u                {fprintf(o2, "av05");} 
-a                {fprintf(o2, "av01");}                
+ /*u                {fprintf(o2, "av05");} */ 
+a/         {fprintf(o2, "av01");}
+" "a/a|e|i|o|u|n                {fprintf(o2, "ar01");}
+a                  {fprintf(o2, "ar01");}
   /*e                {fprintf(o2, "av02");} */    
-ii                {fprintf(o2, "av03");}      
+ii                {fprintf(o2, "av03");} 
+ei               {fprintf(o2, "av03");}
   /*o                {fprintf(o2, "av04");}    */ 
 au               {fprintf(o2, "av05");}    
 ar              {fprintf(o2, "av06");}     
  /*a                {fprintf(o2, "av07");} */                  
-i                {fprintf(o2, "ov08");}      
-ei              {fprintf(o2, "fv09");}      
-ai               {fprintf(o2, "av10");}          
+i                {fprintf(o2, "ov08");}           
+ai             {fprintf(o2, "av10");}          
 av               {fprintf(o2, "av12");}        
 
 
@@ -107,11 +109,12 @@ oo              {fprintf(o2, "ov13");}
  /*or               {fprintf(o2, "ov11");} /*
   /*adiacritics*/  
 om              {fprintf(o2, "ad02");}     
-ae              {fprintf(o2, "ad03");}    
+ae/!i             {fprintf(o2, "ad03");}    
 ah              {fprintf(o2, "ad04");}       
 ih              {fprintf(o2, "ad05");}      
 oh              {fprintf(o2, "ad06");}
-eh|is           {fprintf(o2, "ad07");}
+ /* es|is           {fprintf(o2, "ad07");} */
+es           {fprintf(o2, "ad07");}
 orh             {fprintf(o2, "ad08");}  
 
 
@@ -122,7 +125,7 @@ unknown          {fprintf(o2, "od03");}
 eas              {fprintf(o2, "od04");}      
 ih               {fprintf(o2, "od05");}      
 os               {fprintf(o2, "od06");}
-es               {fprintf(o2, "od07");}
+es" "               {fprintf(o2, "od07 ");}
 ouh              {fprintf(o2, "od08");}
 
  /*special case*/
@@ -137,7 +140,8 @@ ov               {fprintf(o2, "iv5");} */
 
    /*special character/special case*/
 " "or              {fprintf(o2, "sc02");}
-ey              {fprintf(o2, "sc01");}   
+" "ey              {fprintf(o2, "sc01");}   
+@              {fprintf(o2, "sc04");}  
 
 
  /* rule */   
