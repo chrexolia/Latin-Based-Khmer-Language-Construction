@@ -64,8 +64,7 @@ z               {fprintf(o2, "s04");}
 
 
 
- /*fsoundv*/
-us                {fprintf(o2, "ad08");}      
+ /*fsoundv*/    
  /*er               {fprintf(o2, "f02");}     */ 
 e                {fprintf(o2, "f03");}                     
   /*ae               {fprintf(o2, "f04");}   */ 
@@ -75,56 +74,78 @@ ear              {fprintf(o2, "f06");}
 
 
  /*asoundv*/
- /*u                {fprintf(o2, "av05");} */ 
-a/         {fprintf(o2, "av01");}
-" "a/a|e|i|o|u|n                {fprintf(o2, "ar01");}
-a                  {fprintf(o2, "ar01");}
+ /*u                {fprintf(o2, "afv05");} */ 
+a                {fprintf(o2, "av01");}
+" "a              {fprintf(o2, "ar01");}
+ea               {fprintf(o2, "ov05");} 
+ /*or                {fprintf(o2, "ov05");} 
   /*e                {fprintf(o2, "av02");} */    
 ii                {fprintf(o2, "av03");} 
-ei               {fprintf(o2, "av03");}
   /*o                {fprintf(o2, "av04");}    */ 
 au               {fprintf(o2, "av05");}    
 ar              {fprintf(o2, "av06");}     
  /*a                {fprintf(o2, "av07");} */                  
-i                {fprintf(o2, "ov08");}           
-ai             {fprintf(o2, "av10");}          
-av               {fprintf(o2, "av12");}        
+i                {fprintf(o2, "ov08");} 
 
+ai             {fprintf(o2, "av14");}   
+ey                 {fprintf(o2, "ov14");}  
+ei               {fprintf(o2, "av03");}
 
  /*osoundv*/
 
-oa               {fprintf(o2, "ov09");} 
+oa               {fprintf(o2, "av13");} 
 ao               {fprintf(o2, "ov09");}
 eu               {fprintf(o2, "ov01");}
 o                {fprintf(o2, "ov02");}     
-u               {fprintf(o2, "ov03");}      
-er               {fprintf(o2, "ov04");}    
-ea               {fprintf(o2, "ov05");}                  
+u                {fprintf(o2, "ov03");}      
+er               {fprintf(o2, "ov04");}                     
 e                {fprintf(o2, "ov06");}     
 ie               {fprintf(o2, "ov07");}     
-is               {fprintf(o2, "ov12");}  
+
+oe              {fprintf(o2, "av15");}
+ue              {fprintf(o2, "ov15");}
+
 oo              {fprintf(o2, "ov13");}   
  /*uy               {fprintf(o2, "ov10");} */ 
- ov                {fprintf(o2, "ov10");} 
+ov                {fprintf(o2, "ov10");} 
+av               {fprintf(o2, "av12");}
+
+
+
  /*or               {fprintf(o2, "ov11");} /*
-  /*adiacritics*/  
-om              {fprintf(o2, "ad02");}     
-ae/!i             {fprintf(o2, "ad03");}    
-ah              {fprintf(o2, "ad04");}       
-ih              {fprintf(o2, "ad05");}      
+  
+  /*diacritics*/  
+um               {fprintf(o2, "od01");}
+om               {fprintf(o2, "ad01");} 
+
+orm              {fprintf(o2, "ad02");} 
+urm             {fprintf(o2, "od02");}
+
+ah              {fprintf(o2, "ad04");}
+eah               {fprintf(o2, "od04");}
+
+iah              {fprintf(o2, "ad05");} 
+ /*eah              {fprintf(o2, "od05");} */
+
 oh              {fprintf(o2, "ad06");}
- /* es|is           {fprintf(o2, "ad07");} */
+uh              {fprintf(o2, "od06");}
+
+eh           {fprintf(o2, "ad07");}
+ih           {fprintf(o2, "od07");}
+
+orh                {fprintf(o2, "ad08");} 
+urh               {fprintf(o2, "od08");} 
+us                {fprintf(o2, "ad08");}   
+ /*diacritics*/ 
+
+
+ae             {fprintf(o2, "ad03");}          
+
 es           {fprintf(o2, "ad07");}
-orh             {fprintf(o2, "ad08");}  
+am          {fprintf(o2, "od03");}
+ /* es|is           {fprintf(o2, "ad07");} */
+      
 
-
- /*odiacritics*/
-um               {fprintf(o2, "od01");}      
-oam              {fprintf(o2, "od02");}     
-unknown          {fprintf(o2, "od03");}
-eas              {fprintf(o2, "od04");}      
-ih               {fprintf(o2, "od05");}      
-os               {fprintf(o2, "od06");}
 es" "               {fprintf(o2, "od07 ");}
 ouh              {fprintf(o2, "od08");}
 
@@ -141,7 +162,8 @@ ov               {fprintf(o2, "iv5");} */
    /*special character/special case*/
 " "or              {fprintf(o2, "sc02");}
 " "ey              {fprintf(o2, "sc01");}   
-@              {fprintf(o2, "sc04");}  
+@              {fprintf(o2, "sc04");} 
+"2x"                {fprintf(o2, "sc05");} 
 
 
  /* rule */   
