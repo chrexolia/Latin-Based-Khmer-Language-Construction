@@ -383,8 +383,8 @@ static void yynoreturn yy_fatal_error (yyconst char* msg  );
 	*yy_cp = '\0'; \
 	(yy_c_buf_p) = yy_cp;
 
-#define YY_NUM_RULES 128
-#define YY_END_OF_BUFFER 129
+#define YY_NUM_RULES 130
+#define YY_END_OF_BUFFER 131
 /* This struct is not used in this scanner,
    but its presence is necessary. */
 struct yy_trans_info
@@ -392,40 +392,40 @@ struct yy_trans_info
 	flex_int32_t yy_verify;
 	flex_int32_t yy_nxt;
 	};
-static yyconst flex_int16_t yy_accept[292] =
+static yyconst flex_int16_t yy_accept[294] =
     {   0,
-        0,    0,  129,  128,    1,  128,  128,  128,  128,  128,
+        0,    0,  131,  130,    1,  130,  130,  130,  130,  130,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-        0,    0,    0,   63,   64,   65,   66,    0,    7,   47,
-        0,    0,   15,   18,   26,   30,   32,   33,   37,   41,
-        0,    0,    0,    0,    0,    0,  108,   73,   74,   76,
-       77,    0,    0,    0,   48,   49,   50,   51,   52,    0,
-       54,   55,   57,   58,   59,   60,   61,   62,    0,    0,
-        0,    0,    2,    0,    0,    0,    0,    0,   13,    0,
-        0,    0,    0,    0,    0,    0,   25,    0,    0,    0,
-       33,    0,   33,    0,    0,    0,    0,    0,  117,  118,
+        0,    0,    0,   64,   65,   66,   67,    0,    7,   48,
+       13,    0,   16,   19,   27,   31,   33,   34,   38,   42,
+        0,    0,    0,    0,    0,    0,  110,   74,   75,   77,
+       78,    0,    0,    0,   49,   50,   51,   52,   53,    0,
+       55,   56,   58,   59,   60,   61,   62,   63,    0,    0,
+        0,    0,    2,    0,    0,    0,    0,    0,   14,    0,
+        0,    0,    0,    0,    0,    0,   26,    0,    0,    0,
+       34,    0,   34,    0,    0,    0,    0,    0,  119,  120,
 
-      113,  119,  120,  121,  122,  123,   35,   79,   78,   80,
-       81,   82,   83,   85,  111,  107,  114,   71,    0,   87,
-      124,  125,  126,  127,    0,    0,   42,   89,   96,  100,
-      101,  102,  104,  105,   86,  109,  110,  106,  115,   72,
-       67,   68,   69,  116,   70,    0,    0,    0,    0,    0,
+      115,  121,  122,  123,  124,  125,   36,   80,   79,   81,
+       82,   83,   84,   86,  113,  109,  116,   72,    0,   88,
+      126,  127,  128,  129,    0,    0,   43,   90,   97,  102,
+      103,  104,  106,  107,   87,  111,  112,  108,  117,   73,
+       68,   69,   70,  118,   71,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-       28,    0,    0,    0,    0,    0,   34,    0,    0,    0,
-       39,    0,    0,   11,    0,    0,  112,    0,   36,    0,
-        0,   84,   84,    0,    0,    0,    0,    0,    0,    0,
-        0,   44,    0,    4,    5,    6,    6,    8,    9,   12,
+       29,    0,    0,    0,    0,    0,   35,    0,    0,    0,
+       40,    0,    0,   11,    0,    0,  114,    0,   37,    0,
+        0,   85,   85,    0,    0,    0,    0,    0,    0,    0,
+        0,   45,    0,    4,    5,    6,    6,    8,    9,   12,
 
-       14,   14,   16,   17,   17,   17,    0,   25,   28,   28,
-       28,    0,   33,   34,   38,   39,   11,   11,   10,   10,
-        0,    0,    0,    0,   45,   53,   90,    0,    0,    0,
-        0,    0,    0,    0,    3,    6,   17,   17,    0,    0,
-        0,    0,    0,   75,   75,    0,    0,    0,    0,    0,
-        0,  103,   40,   20,    0,   24,   17,    0,    0,    0,
-       88,   93,   97,    0,   95,   92,   94,    0,   98,    0,
-        0,   17,    0,   29,   27,    0,    0,   99,    0,   23,
-       17,   22,    0,    0,   91,    0,    0,   21,    0,   19,
-        0
+       15,   15,   17,   18,   18,   18,    0,   26,   29,   29,
+       29,    0,   34,   35,   39,   40,   11,   11,   10,   10,
+        0,    0,    0,    0,   46,   54,   91,    0,    0,    0,
+        0,    0,    0,    0,    3,    6,   18,   18,    0,    0,
+        0,    0,    0,   76,   76,    0,    0,    0,    0,    0,
+        0,    0,  105,   41,   21,    0,   25,   18,    0,    0,
+        0,   89,   94,   98,    0,   96,   93,   95,    0,  101,
+       99,    0,    0,   18,    0,   30,   28,    0,    0,  100,
+        0,   24,   18,   23,    0,    0,   92,    0,    0,   22,
+        0,   20,    0
 
     } ;
 
@@ -468,95 +468,95 @@ static yyconst YY_CHAR yy_meta[28] =
         4,    4,    4,    4,    4,    4,    5
     } ;
 
-static yyconst flex_uint16_t yy_base[328] =
+static yyconst flex_uint16_t yy_base[330] =
     {   0,
-        0,   10,  320,  321,  321,   32,    2,  292,    4,   54,
-       69,   79,  313,  311,  311,    0,   83,  309,  309,   89,
-       99,  308,    6,  321,  321,  321,  321,  307,   17,   22,
-        2,   24,  321,   25,   95,  321,  321,   46,  321,   26,
-       47,  116,  304,  304,  124,    6,  321,  321,  291,  321,
-      321,  303,  131,  283,  321,  321,  321,  321,  321,  282,
-      321,  321,  321,  321,  321,  321,  321,  321,   43,  135,
-      145,  150,  321,   93,  300,  277,  276,  275,  321,  274,
-      273,  272,  271,  270,  269,   68,  321,  268,   31,  274,
-      266,    0,  265,  264,   45,   59,    0,   88,  321,  321,
+        0,   10,  322,  323,  323,   32,    2,  294,    4,   54,
+       69,   79,  315,  313,  313,    0,   83,  311,  311,   89,
+       99,  310,    6,  323,  323,  323,  323,  309,   17,   22,
+        2,   24,  323,   25,   95,  323,  323,   46,  323,   26,
+       47,  116,  306,  306,  124,    6,  323,  323,  293,  323,
+      323,  305,  131,  285,  323,  323,  323,  323,  323,  284,
+      323,  323,  323,  323,  323,  323,  323,  323,   43,  135,
+      145,  150,  323,   93,  302,  279,  278,  277,  323,  276,
+      275,  274,  273,  272,  271,   68,  323,  270,   31,  276,
+      268,    0,  267,  266,   45,   59,    0,   88,  323,  323,
 
-      149,  321,  321,  321,  321,  321,  150,  321,  321,  321,
-      321,  272,  158,  321,  321,  321,  321,  321,  284,  321,
-      321,  321,  321,  321,  261,  260,  321,  262,  145,  321,
-      321,  267,  321,  321,  321,  321,  321,  321,  321,  321,
-      321,  321,  266,  321,  321,    0,  278,    0,  274,  276,
-        0,    0,    0,    0,    0,    0,    0,  275,  266,    0,
-      251,    0,    0,    0,  272,    0,  321,    0,    0,    0,
-      321,    0,    0,  321,    0,    0,  321,  270,  321,  248,
-      268,  321,  321,  267,    0,    0,    0,  159,  266,  266,
-      264,    0,  263,    0,  321,  164,    0,    0,  321,    0,
+      149,  323,  323,  323,  323,  323,  150,  323,  323,  323,
+      323,  274,  158,  323,  323,  323,  323,  323,  286,  323,
+      323,  323,  323,  323,  263,  262,  323,  264,  145,  323,
+      323,  269,  323,  323,  323,  323,  323,  323,  323,  323,
+      323,  323,  268,  323,  323,    0,  280,    0,  276,  278,
+        0,    0,    0,    0,    0,    0,    0,  277,  268,    0,
+      253,    0,    0,    0,  274,    0,  323,    0,    0,    0,
+      323,    0,    0,  323,    0,    0,  323,  272,  323,  250,
+      270,  323,  323,  269,    0,    0,    0,  159,  268,  268,
+      266,    0,  265,    0,  323,  164,    0,    0,  323,    0,
 
-        0,    0,    0,    0,  169,    0,  246,  265,    0,    0,
+        0,    0,    0,    0,  169,    0,  248,  267,    0,    0,
         0,  158,    0,    0,    0,    0,    0,    0,    0,    0,
-      257,  260,  259,  183,    0,    0,    0,  177,  258,  257,
-      252,  254,  250,  256,  233,  254,  250,  236,  226,  228,
-      245,  242,    0,  321,  321,  170,    0,    0,    0,  243,
-      175,  321,  321,  321,  242,  321,  241,  241,    0,  234,
-      321,  321,  321,  153,  321,  321,  321,  242,  321,  237,
-      233,  232,  234,    0,  321,  234,  233,  321,  228,  321,
-      218,    6,  229,  228,  321,  228,  217,  321,  219,  321,
-      321,  203,  206,  227,  226,  211,  225,  224,  223,  222,
+      259,  262,  261,  183,    0,    0,    0,  177,  260,  259,
+      163,  257,  253,  259,  236,  257,  253,  239,  229,  231,
+      248,  245,    0,  323,  323,  175,    0,    0,    0,  246,
+      249,  176,  323,  323,  323,  244,  323,  243,  243,    0,
+      236,  323,  323,  323,  170,  323,  323,  323,  244,  323,
+      323,  239,  235,  234,  236,    0,  323,  236,  235,  323,
+      230,  323,  220,    6,  231,  230,  323,  230,  219,  323,
+      221,  323,  323,  203,  206,  229,  228,  211,  227,  226,
 
-      221,  220,  219,  218,  217,  216,  215,  214,  213,  212,
-      207,  196,  194,  193,  192,  191,  189,  188,  178,  167,
-      128,  102,   65,   52,   43,   28,    0
+      225,  224,  223,  222,  221,  220,  219,  218,  217,  216,
+      215,  214,  213,  212,  207,  196,  193,  189,  188,  185,
+      178,  177,  128,  102,   65,   52,   43,   28,    0
     } ;
 
-static yyconst flex_int16_t yy_def[328] =
+static yyconst flex_int16_t yy_def[330] =
     {   0,
-      292,  292,  291,  291,  291,  291,  291,  291,  291,  291,
-      291,  291,  291,  291,  291,  291,  291,  291,  291,  291,
-      291,  291,  291,  291,  291,  291,  291,  291,  291,  291,
-      291,  291,  291,  291,  291,  291,  291,  291,  291,  291,
-      291,  291,  291,  291,  291,  291,  291,  291,  291,  291,
-      291,  291,  291,  291,  291,  291,  291,  291,  291,  291,
-      291,  291,  291,  291,  291,  291,  291,  291,   42,  291,
-      291,  291,  291,  291,  291,  291,  291,  291,  291,  291,
-      291,  291,  291,  291,  291,  291,  291,  293,  291,  291,
-      291,  294,  291,  291,  291,  291,  295,  291,  291,  291,
+      294,  294,  293,  293,  293,  293,  293,  293,  293,  293,
+      293,  293,  293,  293,  293,  293,  293,  293,  293,  293,
+      293,  293,  293,  293,  293,  293,  293,  293,  293,  293,
+      293,  293,  293,  293,  293,  293,  293,  293,  293,  293,
+      293,  293,  293,  293,  293,  293,  293,  293,  293,  293,
+      293,  293,  293,  293,  293,  293,  293,  293,  293,  293,
+      293,  293,  293,  293,  293,  293,  293,  293,   42,  293,
+      293,  293,  293,  293,  293,  293,  293,  293,  293,  293,
+      293,  293,  293,  293,  293,  293,  293,  295,  293,  293,
+      293,  296,  293,  293,  293,  293,  297,  293,  293,  293,
 
-      291,  291,  291,  291,  291,  291,  291,  291,  291,  291,
-      291,  291,  296,  291,  291,  291,  291,  291,  291,  291,
-      291,  291,  291,  291,  291,  291,  291,  291,  291,  291,
-      291,  291,  291,  291,  291,  291,  291,  291,  291,  291,
-      291,  291,  291,  291,  291,  297,  291,  298,  291,  299,
-      300,  301,  302,  303,  304,  305,  306,  307,  291,  308,
-      293,  309,  310,  311,  291,  312,  291,  313,  314,  315,
-      291,  316,  317,  291,  318,  319,  291,  291,  291,  291,
-      291,  291,  291,  291,  320,  321,  322,  291,  291,  291,
-      291,  297,  291,  298,  291,  299,  299,  300,  291,  302,
+      293,  293,  293,  293,  293,  293,  293,  293,  293,  293,
+      293,  293,  298,  293,  293,  293,  293,  293,  293,  293,
+      293,  293,  293,  293,  293,  293,  293,  293,  293,  293,
+      293,  293,  293,  293,  293,  293,  293,  293,  293,  293,
+      293,  293,  293,  293,  293,  299,  293,  300,  293,  301,
+      302,  303,  304,  305,  306,  307,  308,  309,  293,  310,
+      295,  311,  312,  313,  293,  314,  293,  315,  316,  317,
+      293,  318,  319,  293,  320,  321,  293,  293,  293,  293,
+      293,  293,  293,  293,  322,  323,  324,  293,  293,  293,
+      293,  299,  293,  300,  293,  301,  301,  302,  293,  304,
 
-      303,  304,  305,  306,  307,  307,  291,  308,  309,  310,
-      311,  291,  312,  313,  314,  315,  316,  317,  318,  319,
-      291,  291,  291,  291,  320,  321,  322,  291,  291,  291,
-      291,  291,  291,  291,  299,  299,  307,  307,  291,  291,
-      291,  291,  323,  291,  291,  291,  324,  325,  326,  291,
-      291,  291,  291,  291,  291,  291,  307,  291,  327,  291,
-      291,  291,  291,  291,  291,  291,  291,  291,  291,  291,
-      291,  307,  291,  327,  291,  291,  291,  291,  291,  291,
-      307,  291,  291,  291,  291,  291,  291,  291,  291,  291,
-        0,  291,  291,  291,  291,  291,  291,  291,  291,  291,
+      305,  306,  307,  308,  309,  309,  293,  310,  311,  312,
+      313,  293,  314,  315,  316,  317,  318,  319,  320,  321,
+      293,  293,  293,  293,  322,  323,  324,  293,  293,  293,
+      293,  293,  293,  293,  301,  301,  309,  309,  293,  293,
+      293,  293,  325,  293,  293,  293,  326,  327,  328,  293,
+      293,  293,  293,  293,  293,  293,  293,  309,  293,  329,
+      293,  293,  293,  293,  293,  293,  293,  293,  293,  293,
+      293,  293,  293,  309,  293,  329,  293,  293,  293,  293,
+      293,  293,  309,  293,  293,  293,  293,  293,  293,  293,
+      293,  293,    0,  293,  293,  293,  293,  293,  293,  293,
 
-      291,  291,  291,  291,  291,  291,  291,  291,  291,  291,
-      291,  291,  291,  291,  291,  291,  291,  291,  291,  291,
-      291,  291,  291,  291,  291,  291,  291
+      293,  293,  293,  293,  293,  293,  293,  293,  293,  293,
+      293,  293,  293,  293,  293,  293,  293,  293,  293,  293,
+      293,  293,  293,  293,  293,  293,  293,  293,  293
     } ;
 
-static yyconst flex_uint16_t yy_nxt[349] =
+static yyconst flex_uint16_t yy_nxt[351] =
     {   0,
-      291,  291,  274,   79,   45,   46,   17,  287,   20,   21,
+      293,  293,  276,   79,   45,   46,   17,  289,   20,   21,
        70,   71,  115,  116,  117,  118,    5,    6,   73,   80,
-      288,    7,    8,    9,   22,   10,    5,    6,   18,  267,
+      290,    7,    8,    9,   22,   10,    5,    6,   18,  268,
        23,    7,    8,    9,   74,   10,   11,   12,   75,   77,
-       76,   81,   83,   94,  266,   78,   84,   82,   85,   95,
-      291,  163,   13,  265,  127,   14,   15,  164,   16,   24,
-       25,   26,   27,   91,   96,  170,  262,   92,   97,   93,
+       76,   81,   83,   94,  267,   78,   84,   82,   85,   95,
+      293,  163,   13,  266,  127,   14,   15,  164,   16,   24,
+       25,   26,   27,   91,   96,  170,  263,   92,   97,   93,
        98,  171,  159,   28,   29,   30,   31,   32,   33,  172,
        34,   35,   36,   37,   38,  173,   39,   40,  160,   41,
        47,   48,   49,   50,   51,   54,   55,   56,   57,   58,
@@ -567,69 +567,69 @@ static yyconst flex_uint16_t yy_nxt[349] =
       226,  110,  111,  112,  113,  114,  121,  122,  123,  124,
       128,  129,  130,  131,  132,  133,  134,  135,  136,  137,
       177,  179,  138,  139,  140,  141,  142,  143,  144,  145,
-      183,  183,  188,  228,  229,  240,  178,  180,  189,  225,
-      235,  263,  183,  236,  183,  237,  269,  276,  238,  277,
-      220,  241,  246,  230,  244,  245,  244,  264,  247,  248,
-      219,  218,  270,  217,  216,  215,  214,  245,  213,  244,
+      183,  183,  188,  228,  229,  240,  178,  180,  189,  251,
+      235,  252,  183,  236,  183,  237,  264,  271,  238,  225,
+      220,  241,  246,  230,  244,  245,  244,  219,  247,  248,
+      218,  217,  265,  272,  278,  216,  279,  245,  215,  244,
 
-      244,  244,  244,    4,    4,    4,    4,    4,  161,  211,
-      161,  182,  182,  182,  210,  209,  208,  206,  204,  203,
-      202,  201,  200,  199,  198,  197,  194,  192,  174,  167,
-      290,  288,  289,  278,  263,  286,  285,  284,  283,  282,
-      281,  280,  279,  278,  275,  273,  272,  271,  268,  261,
-      260,  241,  259,  258,  257,  256,  255,  254,  253,  252,
-      251,  250,  249,  243,  242,  177,   87,  239,  234,  233,
-      232,  231,  224,  223,  222,  221,  212,  291,  207,  205,
-      196,  195,  193,  191,  190,  187,  186,  185,  184,  181,
-      169,  168,  166,  165,  162,  158,  157,  156,  155,  154,
+      244,  244,  244,    4,    4,    4,    4,    4,  161,  214,
+      161,  182,  182,  182,  213,  211,  210,  209,  208,  206,
+      204,  203,  202,  201,  200,  199,  198,  197,  194,  192,
+      174,  167,  292,  290,  291,  280,  264,  288,  287,  286,
+      285,  284,  283,  282,  281,  280,  277,  275,  274,  273,
+      270,  269,  262,  261,  241,  260,  259,  258,  257,  256,
+      255,  254,  253,  250,  249,  243,  242,  177,   87,  239,
+      234,  233,  232,  231,  224,  223,  222,  221,  212,  293,
+      207,  205,  196,  195,  193,  191,  190,  187,  186,  185,
+      184,  181,  169,  168,  166,  165,  162,  158,  157,  156,
 
-      153,  152,  151,  150,  149,  126,  125,  120,  119,  108,
-      107,   72,   69,   53,   52,   44,   43,   42,   19,  291,
-        3,  291,  291,  291,  291,  291,  291,  291,  291,  291,
-      291,  291,  291,  291,  291,  291,  291,  291,  291,  291,
-      291,  291,  291,  291,  291,  291,  291,  291
+      155,  154,  153,  152,  151,  150,  149,  126,  125,  120,
+      119,  108,  107,   72,   69,   53,   52,   44,   43,   42,
+       19,  293,    3,  293,  293,  293,  293,  293,  293,  293,
+      293,  293,  293,  293,  293,  293,  293,  293,  293,  293,
+      293,  293,  293,  293,  293,  293,  293,  293,  293,  293
     } ;
 
-static yyconst flex_int16_t yy_chk[349] =
+static yyconst flex_int16_t yy_chk[351] =
     {   0,
-        0,    0,  327,   31,   16,   16,    7,  282,    9,    9,
+        0,    0,  329,   31,   16,   16,    7,  284,    9,    9,
        23,   23,   46,   46,   46,   46,    1,    1,   29,   31,
-      282,    1,    1,    1,    9,    1,    2,    2,    7,  326,
+      284,    1,    1,    1,    9,    1,    2,    2,    7,  328,
         9,    2,    2,    2,   29,    2,    6,    6,   29,   30,
-       29,   32,   34,   40,  325,   30,   34,   32,   34,   40,
-       69,   89,    6,  324,   69,    6,    6,   89,    6,   10,
-       10,   10,   10,   38,   41,   95,  323,   38,   41,   38,
+       29,   32,   34,   40,  327,   30,   34,   32,   34,   40,
+       69,   89,    6,  326,   69,    6,    6,   89,    6,   10,
+       10,   10,   10,   38,   41,   95,  325,   38,   41,   38,
        41,   95,   86,   10,   11,   11,   11,   11,   11,   96,
        11,   11,   11,   12,   12,   96,   12,   12,   86,   12,
        17,   17,   17,   17,   17,   20,   20,   20,   20,   20,
 
-       20,   20,   20,   21,  322,   21,   21,   21,   98,   21,
+       20,   20,   20,   21,  324,   21,   21,   21,   98,   21,
        21,   21,   35,   74,   98,   35,   35,   74,   35,   74,
        35,   42,   42,   42,   42,   42,   42,   42,   42,   45,
-      321,   45,   45,   45,   45,   45,   53,   53,   53,   53,
+      323,   45,   45,   45,   45,   45,   53,   53,   53,   53,
        70,   70,   70,   70,   70,   70,   70,   70,   70,   71,
       101,  107,   71,   71,   71,   72,   72,   72,   72,   72,
-      113,  113,  129,  188,  188,  212,  101,  107,  129,  320,
-      196,  246,  113,  196,  113,  205,  251,  264,  205,  264,
-      319,  212,  228,  188,  224,  224,  224,  246,  228,  228,
-      318,  317,  251,  316,  315,  314,  313,  224,  312,  224,
+      113,  113,  129,  188,  188,  212,  101,  107,  129,  231,
+      196,  231,  113,  196,  113,  205,  246,  252,  205,  322,
+      321,  212,  228,  188,  224,  224,  224,  320,  228,  228,
+      319,  318,  246,  252,  265,  317,  265,  224,  316,  224,
 
-      224,  224,  224,  292,  292,  292,  292,  292,  293,  311,
-      293,  296,  296,  296,  310,  309,  308,  307,  306,  305,
-      304,  303,  302,  301,  300,  299,  298,  297,  295,  294,
-      289,  287,  286,  284,  283,  281,  279,  277,  276,  273,
-      272,  271,  270,  268,  260,  258,  257,  255,  250,  242,
-      241,  240,  239,  238,  237,  236,  235,  234,  233,  232,
-      231,  230,  229,  223,  222,  221,  208,  207,  193,  191,
-      190,  189,  184,  181,  180,  178,  165,  161,  159,  158,
-      150,  149,  147,  143,  132,  128,  126,  125,  119,  112,
-       94,   93,   91,   90,   88,   85,   84,   83,   82,   81,
+      224,  224,  224,  294,  294,  294,  294,  294,  295,  315,
+      295,  298,  298,  298,  314,  313,  312,  311,  310,  309,
+      308,  307,  306,  305,  304,  303,  302,  301,  300,  299,
+      297,  296,  291,  289,  288,  286,  285,  283,  281,  279,
+      278,  275,  274,  273,  272,  269,  261,  259,  258,  256,
+      251,  250,  242,  241,  240,  239,  238,  237,  236,  235,
+      234,  233,  232,  230,  229,  223,  222,  221,  208,  207,
+      193,  191,  190,  189,  184,  181,  180,  178,  165,  161,
+      159,  158,  150,  149,  147,  143,  132,  128,  126,  125,
+      119,  112,   94,   93,   91,   90,   88,   85,   84,   83,
 
-       80,   78,   77,   76,   75,   60,   54,   52,   49,   44,
-       43,   28,   22,   19,   18,   15,   14,   13,    8,    3,
-      291,  291,  291,  291,  291,  291,  291,  291,  291,  291,
-      291,  291,  291,  291,  291,  291,  291,  291,  291,  291,
-      291,  291,  291,  291,  291,  291,  291,  291
+       82,   81,   80,   78,   77,   76,   75,   60,   54,   52,
+       49,   44,   43,   28,   22,   19,   18,   15,   14,   13,
+        8,    3,  293,  293,  293,  293,  293,  293,  293,  293,
+      293,  293,  293,  293,  293,  293,  293,  293,  293,  293,
+      293,  293,  293,  293,  293,  293,  293,  293,  293,  293
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -896,13 +896,13 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 292 )
+				if ( yy_current_state >= 294 )
 					yy_c = yy_meta[(unsigned int) yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + (flex_int16_t) yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 321 );
+		while ( yy_base[yy_current_state] != 323 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -1018,12 +1018,9 @@ YY_RULE_SETUP
 {printf("ឆ");}
 	YY_BREAK
 case 13:
-*yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
-(yy_c_buf_p) = yy_cp = yy_bp + 3;
-YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
 #line 22 "khroK.l"
-{printf("ច");}
+{printf("ឆ");}
 	YY_BREAK
 case 14:
 *yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
@@ -1031,20 +1028,20 @@ case 14:
 YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
 #line 23 "khroK.l"
-{printf("ឈ");}       
+{printf("ច");}
 	YY_BREAK
 case 15:
-YY_RULE_SETUP
-#line 24 "khroK.l"
-{printf("ដ");}     
-	YY_BREAK
-case 16:
 *yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
 (yy_c_buf_p) = yy_cp = yy_bp + 3;
 YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
+#line 24 "khroK.l"
+{printf("ឈ");}       
+	YY_BREAK
+case 16:
+YY_RULE_SETUP
 #line 25 "khroK.l"
-{printf("ណ");}
+{printf("ដ");}     
 	YY_BREAK
 case 17:
 *yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
@@ -1052,74 +1049,74 @@ case 17:
 YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
 #line 26 "khroK.l"
-{printf("ន");}
+{printf("ណ");}
 	YY_BREAK
 case 18:
+*yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
+(yy_c_buf_p) = yy_cp = yy_bp + 3;
+YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
 #line 27 "khroK.l"
 {printf("ន");}
 	YY_BREAK
 case 19:
-*yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
-(yy_c_buf_p) = yy_cp = yy_bp + 10;
-YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
 #line 28 "khroK.l"
 {printf("ន");}
 	YY_BREAK
-/*special case*/
 case 20:
-*yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
-(yy_c_buf_p) = yy_cp = yy_bp + 7;
-YY_DO_BEFORE_ACTION; /* set up kktext again */
-YY_RULE_SETUP
-#line 32 "khroK.l"
-{printf("ការ");}
-	YY_BREAK
-case 21:
 *yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
 (yy_c_buf_p) = yy_cp = yy_bp + 10;
 YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
+#line 29 "khroK.l"
+{printf("ន");}
+	YY_BREAK
+/*special case*/
+case 21:
+*yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
+(yy_c_buf_p) = yy_cp = yy_bp + 7;
+YY_DO_BEFORE_ACTION; /* set up kktext again */
+YY_RULE_SETUP
 #line 33 "khroK.l"
-{printf("នាក់");}
+{printf("ការ");}
 	YY_BREAK
 case 22:
+*yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
+(yy_c_buf_p) = yy_cp = yy_bp + 10;
+YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
 #line 34 "khroK.l"
-{printf("អ្នក");}
+{printf("នាក់");}
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
 #line 35 "khroK.l"
-{printf("ក៏");}
+{printf("អ្នក");}
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
 #line 36 "khroK.l"
 {printf("ក៏");}
 	YY_BREAK
-/*special case*/
 case 25:
+YY_RULE_SETUP
+#line 37 "khroK.l"
+{printf("ក៏");}
+	YY_BREAK
+/*special case*/
+case 26:
 *yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
 (yy_c_buf_p) = yy_cp = yy_bp + 3;
 YY_DO_BEFORE_ACTION; /* set up kktext again */
-YY_RULE_SETUP
-#line 40 "khroK.l"
-{printf("ត");}
-	YY_BREAK
-case 26:
 YY_RULE_SETUP
 #line 41 "khroK.l"
 {printf("ត");}
 	YY_BREAK
 case 27:
-*yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
-(yy_c_buf_p) = yy_cp = yy_bp + 3;
-YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
 #line 42 "khroK.l"
-{printf("ធ");}
+{printf("ត");}
 	YY_BREAK
 case 28:
 *yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
@@ -1127,7 +1124,7 @@ case 28:
 YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
 #line 43 "khroK.l"
-{printf("ទ");}
+{printf("ធ");}
 	YY_BREAK
 case 29:
 *yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
@@ -1135,30 +1132,30 @@ case 29:
 YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
 #line 44 "khroK.l"
-{printf("ទ");}     
+{printf("ទ");}
 	YY_BREAK
 case 30:
-YY_RULE_SETUP
-#line 47 "khroK.l"
-{printf("ថ");}
-	YY_BREAK
-case 31:
-YY_RULE_SETUP
-#line 48 "khroK.l"
-{printf("ឋ");}
-	YY_BREAK
-case 32:
-YY_RULE_SETUP
-#line 49 "khroK.l"
-{printf("ប");} 
-	YY_BREAK
-case 33:
 *yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
 (yy_c_buf_p) = yy_cp = yy_bp + 3;
 YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
+#line 45 "khroK.l"
+{printf("ទ");}     
+	YY_BREAK
+case 31:
+YY_RULE_SETUP
+#line 48 "khroK.l"
+{printf("ថ");}
+	YY_BREAK
+case 32:
+YY_RULE_SETUP
+#line 49 "khroK.l"
+{printf("ឋ");}
+	YY_BREAK
+case 33:
+YY_RULE_SETUP
 #line 50 "khroK.l"
-{printf("ផ");}
+{printf("ប");} 
 	YY_BREAK
 case 34:
 *yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
@@ -1166,30 +1163,30 @@ case 34:
 YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
 #line 51 "khroK.l"
-{printf("ភ");} 
+{printf("ផ");}
 	YY_BREAK
 case 35:
-YY_RULE_SETUP
-#line 53 "khroK.l"
-{printf("ស");}
-	YY_BREAK
-case 36:
-YY_RULE_SETUP
-#line 54 "khroK.l"
-{printf("ស់");}       
-	YY_BREAK
-case 37:
-YY_RULE_SETUP
-#line 55 "khroK.l"
-{printf("ហ");}                  
-	YY_BREAK
-case 38:
 *yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
 (yy_c_buf_p) = yy_cp = yy_bp + 3;
 YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
+#line 52 "khroK.l"
+{printf("ភ");} 
+	YY_BREAK
+case 36:
+YY_RULE_SETUP
+#line 54 "khroK.l"
+{printf("ស");}
+	YY_BREAK
+case 37:
+YY_RULE_SETUP
+#line 55 "khroK.l"
+{printf("ស់");}       
+	YY_BREAK
+case 38:
+YY_RULE_SETUP
 #line 56 "khroK.l"
-{printf("ឡ");}
+{printf("ហ");}                  
 	YY_BREAK
 case 39:
 *yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
@@ -1197,41 +1194,41 @@ case 39:
 YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
 #line 57 "khroK.l"
-{printf("ល");}
+{printf("ឡ");}
 	YY_BREAK
 case 40:
-YY_RULE_SETUP
-#line 58 "khroK.l"
-{printf("្ល");}
-	YY_BREAK
-/*'a14      {printf("្ល");} */
-case 41:
-YY_RULE_SETUP
-#line 63 "khroK.l"
-{printf("ល");}        
-	YY_BREAK
-/*a15              {printf("អ");}     */
-case 42:
-YY_RULE_SETUP
-#line 68 "khroK.l"
-{printf("េះ");}
-	YY_BREAK
-/*osoundc*/ 
-case 43:
 *yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
 (yy_c_buf_p) = yy_cp = yy_bp + 3;
 YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
-#line 71 "khroK.l"
-{printf("គ");}
+#line 58 "khroK.l"
+{printf("ល");}
 	YY_BREAK
+case 41:
+YY_RULE_SETUP
+#line 59 "khroK.l"
+{printf("្ល");}
+	YY_BREAK
+/*'a14      {printf("្ល");} */
+case 42:
+YY_RULE_SETUP
+#line 64 "khroK.l"
+{printf("ល");}        
+	YY_BREAK
+/*a15              {printf("អ");}     */
+case 43:
+YY_RULE_SETUP
+#line 69 "khroK.l"
+{printf("េះ");}
+	YY_BREAK
+/*osoundc*/ 
 case 44:
 *yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
 (yy_c_buf_p) = yy_cp = yy_bp + 3;
 YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
 #line 72 "khroK.l"
-{printf("ក");}       
+{printf("គ");}
 	YY_BREAK
 case 45:
 *yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
@@ -1239,7 +1236,7 @@ case 45:
 YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
 #line 73 "khroK.l"
-{printf("ឃ");}
+{printf("ក");}       
 	YY_BREAK
 case 46:
 *yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
@@ -1247,9 +1244,12 @@ case 46:
 YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
 #line 74 "khroK.l"
-{printf("ខ");}
+{printf("ឃ");}
 	YY_BREAK
 case 47:
+*yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
+(yy_c_buf_p) = yy_cp = yy_bp + 3;
+YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
 #line 75 "khroK.l"
 {printf("ខ");}
@@ -1257,249 +1257,246 @@ YY_RULE_SETUP
 case 48:
 YY_RULE_SETUP
 #line 76 "khroK.l"
-{printf("ង");}      
+{printf("ខ");}
 	YY_BREAK
 case 49:
 YY_RULE_SETUP
 #line 77 "khroK.l"
-{printf("ជ");}     
+{printf("ង");}      
 	YY_BREAK
 case 50:
 YY_RULE_SETUP
 #line 78 "khroK.l"
-{printf("ឈ");}    
+{printf("ជ");}     
 	YY_BREAK
 case 51:
 YY_RULE_SETUP
 #line 79 "khroK.l"
-{printf("ញ");}      
+{printf("ឈ");}    
 	YY_BREAK
 case 52:
 YY_RULE_SETUP
 #line 80 "khroK.l"
-{printf("ទ");}
+{printf("ញ");}      
 	YY_BREAK
 case 53:
+YY_RULE_SETUP
+#line 81 "khroK.l"
+{printf("ទ");}
+	YY_BREAK
+case 54:
 *yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
 (yy_c_buf_p) = yy_cp = yy_bp + 3;
 YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
-#line 81 "khroK.l"
-{printf("ធ");}     
-	YY_BREAK
-case 54:
-YY_RULE_SETUP
 #line 82 "khroK.l"
-{printf("ន");}   
+{printf("ធ");}     
 	YY_BREAK
 case 55:
 YY_RULE_SETUP
 #line 83 "khroK.l"
-{printf("ព");}
+{printf("ន");}   
 	YY_BREAK
 case 56:
 YY_RULE_SETUP
 #line 84 "khroK.l"
-{printf("ភ");}      
+{printf("ព");}
 	YY_BREAK
 case 57:
 YY_RULE_SETUP
 #line 85 "khroK.l"
-{printf("ម");}    
+{printf("ភ");}      
 	YY_BREAK
 case 58:
 YY_RULE_SETUP
 #line 86 "khroK.l"
-{printf("យ");}     
+{printf("ម");}    
 	YY_BREAK
 case 59:
 YY_RULE_SETUP
 #line 87 "khroK.l"
-{printf("រ");}      
+{printf("យ");}     
 	YY_BREAK
 case 60:
 YY_RULE_SETUP
-#line 89 "khroK.l"
-{printf("វ");}
+#line 88 "khroK.l"
+{printf("រ");}      
 	YY_BREAK
 case 61:
 YY_RULE_SETUP
 #line 90 "khroK.l"
-{printf("ឌ");}    
+{printf("វ");}
 	YY_BREAK
 case 62:
 YY_RULE_SETUP
 #line 91 "khroK.l"
+{printf("ឌ");}    
+	YY_BREAK
+case 63:
+YY_RULE_SETUP
+#line 92 "khroK.l"
 {printf("ឍ");}     
 	YY_BREAK
 /*SCcombination*/
-case 63:
-YY_RULE_SETUP
-#line 97 "khroK.l"
-{printf("ហ្គ");}     
-	YY_BREAK
 case 64:
 YY_RULE_SETUP
 #line 98 "khroK.l"
-{printf("ហ្ន");}     
+{printf("ហ្គ");}     
 	YY_BREAK
 case 65:
 YY_RULE_SETUP
 #line 99 "khroK.l"
-{printf("ហ្វ");}      
+{printf("ហ្ន");}     
 	YY_BREAK
 case 66:
 YY_RULE_SETUP
 #line 100 "khroK.l"
+{printf("ហ្វ");}      
+	YY_BREAK
+case 67:
+YY_RULE_SETUP
+#line 101 "khroK.l"
 {printf("ហ្ស៊");}     
 	YY_BREAK
 /*SC*/
-case 67:
-YY_RULE_SETUP
-#line 104 "khroK.l"
-{printf("ឥ");}
-	YY_BREAK
 case 68:
 YY_RULE_SETUP
 #line 105 "khroK.l"
-{printf("ឣ");}
+{printf("ឥ");}
 	YY_BREAK
 case 69:
 YY_RULE_SETUP
 #line 106 "khroK.l"
-{printf("្");}
+{printf("ឣ");}
 	YY_BREAK
 case 70:
 YY_RULE_SETUP
 #line 107 "khroK.l"
+{printf("្");}
+	YY_BREAK
+case 71:
+YY_RULE_SETUP
+#line 108 "khroK.l"
 {printf("ៗ");}
 	YY_BREAK
 /*fsoundv*/
-case 71:
-YY_RULE_SETUP
-#line 113 "khroK.l"
-{printf("ឹ");} 
-	YY_BREAK
 case 72:
 YY_RULE_SETUP
 #line 114 "khroK.l"
+{printf("ឹ");} 
+	YY_BREAK
+case 73:
+YY_RULE_SETUP
+#line 115 "khroK.l"
 {printf("ឹ");}      
 	YY_BREAK
 /*f02               {printf("ឺ");}  */                        
-case 73:
-YY_RULE_SETUP
-#line 116 "khroK.l"
-{printf("ែ");}      
-	YY_BREAK
 case 74:
 YY_RULE_SETUP
 #line 117 "khroK.l"
-{printf("ួ");}
+{printf("ែ");}      
 	YY_BREAK
 case 75:
+YY_RULE_SETUP
+#line 118 "khroK.l"
+{printf("ួ");}
+	YY_BREAK
+case 76:
 *yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
 (yy_c_buf_p) = yy_cp = yy_bp + 6;
 YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
-#line 118 "khroK.l"
-{printf("ក់");}
-	YY_BREAK
-case 76:
-YY_RULE_SETUP
 #line 119 "khroK.l"
-{printf("ៀ");}     
+{printf("ក់");}
 	YY_BREAK
 case 77:
 YY_RULE_SETUP
 #line 120 "khroK.l"
+{printf("ៀ");}     
+	YY_BREAK
+case 78:
+YY_RULE_SETUP
+#line 121 "khroK.l"
 {printf("ឿ");}     
 	YY_BREAK
 /*fsoundv*/
-case 78:
-YY_RULE_SETUP
-#line 124 "khroK.l"
-{printf("ា");}
-	YY_BREAK
 case 79:
 YY_RULE_SETUP
 #line 125 "khroK.l"
+{printf("ា");}
+	YY_BREAK
+case 80:
+YY_RULE_SETUP
+#line 126 "khroK.l"
 {printf("ឣ");}                          
 	YY_BREAK
 /*av02                {printf("ិ");}   */  
-case 80:
-YY_RULE_SETUP
-#line 127 "khroK.l"
-{printf("ី");}      
-	YY_BREAK
 case 81:
 YY_RULE_SETUP
 #line 128 "khroK.l"
-{printf("ុ");}     
+{printf("ី");}      
 	YY_BREAK
 case 82:
 YY_RULE_SETUP
 #line 129 "khroK.l"
-{printf("ូ");}     
+{printf("ុ");}     
 	YY_BREAK
 case 83:
 YY_RULE_SETUP
 #line 130 "khroK.l"
-{printf("ើ");} 
+{printf("ូ");}     
 	YY_BREAK
 case 84:
-/* rule 84 can match eol */
+YY_RULE_SETUP
+#line 131 "khroK.l"
+{printf("ើ");} 
+	YY_BREAK
+case 85:
+/* rule 85 can match eol */
 *yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
 YY_LINENO_REWIND_TO(yy_bp + 4);
 (yy_c_buf_p) = yy_cp = yy_bp + 4;
 YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
-#line 131 "khroK.l"
-{printf("ើរ");}      
-	YY_BREAK
-case 85:
-YY_RULE_SETUP
 #line 132 "khroK.l"
-{printf("ី");}                
+{printf("ើរ");}      
 	YY_BREAK
 case 86:
 YY_RULE_SETUP
 #line 133 "khroK.l"
-{printf("ិ");}                    
+{printf("ី");}                
 	YY_BREAK
 case 87:
 YY_RULE_SETUP
 #line 134 "khroK.l"
-{printf("ួ");}     
+{printf("ិ");}                    
 	YY_BREAK
 case 88:
+YY_RULE_SETUP
+#line 135 "khroK.l"
+{printf("ួ");}     
+	YY_BREAK
+case 89:
 *yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
 (yy_c_buf_p) = yy_cp = yy_bp + 4;
 YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
-#line 137 "khroK.l"
+#line 138 "khroK.l"
 {printf("សុ");}
 	YY_BREAK
 /*osoundv*/
-case 89:
+case 90:
 YY_RULE_SETUP
-#line 140 "khroK.l"
+#line 141 "khroK.l"
 {printf("ឺ");}
 	YY_BREAK
-case 90:
+case 91:
 *yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
 (yy_c_buf_p) = yy_cp = yy_bp + 4;
 YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
-#line 141 "khroK.l"
-{printf("ើ");}
-	YY_BREAK
-case 91:
-*yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
-(yy_c_buf_p) = yy_cp = yy_bp + 7;
-YY_DO_BEFORE_ACTION; /* set up kktext again */
-YY_RULE_SETUP
 #line 142 "khroK.l"
-{}
+{printf("ើ");}
 	YY_BREAK
 case 92:
 *yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
@@ -1507,7 +1504,7 @@ case 92:
 YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
 #line 143 "khroK.l"
-{printf("ត់");}
+{}
 	YY_BREAK
 case 93:
 *yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
@@ -1515,7 +1512,7 @@ case 93:
 YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
 #line 144 "khroK.l"
-{printf("ប់");}
+{printf("ត់");}
 	YY_BREAK
 case 94:
 *yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
@@ -1531,20 +1528,20 @@ case 95:
 YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
 #line 146 "khroK.l"
-{printf("ន់");}
+{printf("ប់");}
 	YY_BREAK
 case 96:
-YY_RULE_SETUP
-#line 147 "khroK.l"
-{printf("ុ");}  
-	YY_BREAK
-case 97:
 *yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
-(yy_c_buf_p) = yy_cp = yy_bp + 4;
+(yy_c_buf_p) = yy_cp = yy_bp + 7;
 YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
+#line 147 "khroK.l"
+{printf("ន់");}
+	YY_BREAK
+case 97:
+YY_RULE_SETUP
 #line 148 "khroK.l"
-{};
+{printf("ុ");}  
 	YY_BREAK
 case 98:
 *yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
@@ -1552,7 +1549,7 @@ case 98:
 YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
 #line 149 "khroK.l"
-{};    
+{};
 	YY_BREAK
 case 99:
 *yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
@@ -1560,164 +1557,180 @@ case 99:
 YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
 #line 150 "khroK.l"
-{};
+{};    
 	YY_BREAK
 case 100:
+*yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
+(yy_c_buf_p) = yy_cp = yy_bp + 4;
+YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
 #line 151 "khroK.l"
-{printf("ាំ");}      
+{};
 	YY_BREAK
 case 101:
+*yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
+(yy_c_buf_p) = yy_cp = yy_bp + 4;
+YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
 #line 152 "khroK.l"
-{printf("ើ");}   
+{};
 	YY_BREAK
 case 102:
 YY_RULE_SETUP
 #line 153 "khroK.l"
-{printf("ា");}
+{printf("ាំ");}      
 	YY_BREAK
 case 103:
-*yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
-(yy_c_buf_p) = yy_cp = yy_bp + 4;
-YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
 #line 154 "khroK.l"
-{};        
+{printf("ើ");}   
 	YY_BREAK
 case 104:
 YY_RULE_SETUP
 #line 155 "khroK.l"
-{printf("ិ");} 
+{printf("ា");}
 	YY_BREAK
 case 105:
-YY_RULE_SETUP
-#line 157 "khroK.l"
-{printf("ី");}  
-	YY_BREAK
-case 106:
-YY_RULE_SETUP
-#line 158 "khroK.l"
-{printf("ូ");}
-	YY_BREAK
-case 107:
-YY_RULE_SETUP
-#line 159 "khroK.l"
-{printf("ូ");}
-	YY_BREAK
-case 108:
-YY_RULE_SETUP
-#line 161 "khroK.l"
-{printf("េ");}                     
-	YY_BREAK
-case 109:
-YY_RULE_SETUP
-#line 162 "khroK.l"
-{printf("ោ");}     
-	YY_BREAK
-case 110:
-YY_RULE_SETUP
-#line 163 "khroK.l"
-{printf("ៅ");}
-	YY_BREAK
-case 111:
-YY_RULE_SETUP
-#line 164 "khroK.l"
-{printf("ៅ");}       
-	YY_BREAK
-case 112:
 *yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
 (yy_c_buf_p) = yy_cp = yy_bp + 4;
 YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
+#line 156 "khroK.l"
+{};        
+	YY_BREAK
+case 106:
+YY_RULE_SETUP
+#line 157 "khroK.l"
+{printf("ិ");} 
+	YY_BREAK
+case 107:
+YY_RULE_SETUP
+#line 159 "khroK.l"
+{printf("ី");}  
+	YY_BREAK
+case 108:
+YY_RULE_SETUP
+#line 160 "khroK.l"
+{printf("ូ");}
+	YY_BREAK
+case 109:
+YY_RULE_SETUP
+#line 161 "khroK.l"
+{printf("ូ");}
+	YY_BREAK
+case 110:
+YY_RULE_SETUP
+#line 163 "khroK.l"
+{printf("េ");}                     
+	YY_BREAK
+case 111:
+YY_RULE_SETUP
+#line 164 "khroK.l"
+{printf("ោ");}      
+	YY_BREAK
+case 112:
+YY_RULE_SETUP
 #line 165 "khroK.l"
-{printf("ែ");}  
+{printf("ៅ");}
 	YY_BREAK
 case 113:
 YY_RULE_SETUP
 #line 166 "khroK.l"
-{printf("ែ");} 
+{printf("ៅ");}       
 	YY_BREAK
 case 114:
+*yy_cp = (yy_hold_char); /* undo effects of setting up kktext */
+(yy_c_buf_p) = yy_cp = yy_bp + 4;
+YY_DO_BEFORE_ACTION; /* set up kktext again */
 YY_RULE_SETUP
 #line 167 "khroK.l"
-{printf("ៃ");}           
+{printf("ែ");}  
 	YY_BREAK
 case 115:
 YY_RULE_SETUP
 #line 168 "khroK.l"
-{printf("ៃ");}  
+{printf("ែ");} 
 	YY_BREAK
 case 116:
 YY_RULE_SETUP
-#line 170 "khroK.l"
-{printf("ឯ");}       
+#line 169 "khroK.l"
+{printf("ៃ");}           
 	YY_BREAK
-/*d*/
 case 117:
 YY_RULE_SETUP
-#line 176 "khroK.l"
-{printf("ុំ");}     
+#line 170 "khroK.l"
+{printf("ៃ");}  
 	YY_BREAK
 case 118:
 YY_RULE_SETUP
-#line 177 "khroK.l"
-{printf("ំ");}     
+#line 172 "khroK.l"
+{printf("ឯ");}       
 	YY_BREAK
+/*d*/
 case 119:
 YY_RULE_SETUP
 #line 178 "khroK.l"
-{printf("ះ");}
+{printf("ុំ");}     
 	YY_BREAK
 case 120:
 YY_RULE_SETUP
 #line 179 "khroK.l"
-{printf("ិះ");}
+{printf("ំ");}     
 	YY_BREAK
 case 121:
 YY_RULE_SETUP
 #line 180 "khroK.l"
-{printf("ុះ");}  
+{printf("ះ");}
 	YY_BREAK
 case 122:
 YY_RULE_SETUP
 #line 181 "khroK.l"
-{printf("េះ");}
+{printf("ិះ");}
 	YY_BREAK
 case 123:
 YY_RULE_SETUP
 #line 182 "khroK.l"
+{printf("ុះ");}  
+	YY_BREAK
+case 124:
+YY_RULE_SETUP
+#line 183 "khroK.l"
+{printf("េះ");}
+	YY_BREAK
+case 125:
+YY_RULE_SETUP
+#line 184 "khroK.l"
 {printf("េាះ");} 
 	YY_BREAK
 /*d*/
 /*iv*/
-case 124:
-YY_RULE_SETUP
-#line 187 "khroK.l"
-{printf("ឯ");}      
-	YY_BREAK
-case 125:
-YY_RULE_SETUP
-#line 188 "khroK.l"
-{printf("ឬ");}
-	YY_BREAK
 case 126:
 YY_RULE_SETUP
 #line 189 "khroK.l"
-{printf("ឱ");}
+{printf("ឯ");}      
 	YY_BREAK
 case 127:
 YY_RULE_SETUP
 #line 190 "khroK.l"
+{printf("ឬ");}
+	YY_BREAK
+case 128:
+YY_RULE_SETUP
+#line 191 "khroK.l"
+{printf("ឱ");}
+	YY_BREAK
+case 129:
+YY_RULE_SETUP
+#line 192 "khroK.l"
 {printf("ឳ");}  
 	YY_BREAK
 /*rules*/
-case 128:
+case 130:
 YY_RULE_SETUP
-#line 196 "khroK.l"
+#line 198 "khroK.l"
 ECHO;
 	YY_BREAK
-#line 1721 "khroK.c"
+#line 1734 "khroK.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -2010,7 +2023,7 @@ static int yy_get_next_buffer (void)
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 292 )
+			if ( yy_current_state >= 294 )
 				yy_c = yy_meta[(unsigned int) yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + (flex_int16_t) yy_c];
@@ -2038,11 +2051,11 @@ static int yy_get_next_buffer (void)
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 292 )
+		if ( yy_current_state >= 294 )
 			yy_c = yy_meta[(unsigned int) yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + (flex_int16_t) yy_c];
-	yy_is_jam = (yy_current_state == 291);
+	yy_is_jam = (yy_current_state == 293);
 
 		return yy_is_jam ? 0 : yy_current_state;
 }
@@ -2718,7 +2731,7 @@ void kkfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 196 "khroK.l"
+#line 198 "khroK.l"
 
 
 /*

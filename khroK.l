@@ -19,6 +19,7 @@ a02/ov[0-9]                     {printf("ឃ");}
 a16/ov[0-9]+|od[0-9]+                      {printf("ជ");} 
 a16/av[0-9]+|f[0-9]|ad[0-9]+            {printf("ច");}     
 a03/av[0-9]+                     {printf("ឆ");}
+a03                    {printf("ឆ");}
 a03/" "                              {printf("ច");}
 a04/ov[0-9]+|av[0-9]+                     {printf("ឈ");}       
 a05                    {printf("ដ");}     
@@ -148,6 +149,7 @@ ov02                {printf("ុ");}
 ov02/a01" "|a01ar01         {};
 ov02/o14" "         {};    
 ov02/ar01" "|a01av01        {};
+ov02/o12" "               {};
 ov03               {printf("ាំ");}      
 ov04            {printf("ើ");}   
 ov05             {printf("ា");}
@@ -159,7 +161,7 @@ ov13               {printf("ូ");}
 av13               {printf("ូ");}
 
 f03                {printf("េ");}                     
-ov09               {printf("ោ");}     
+ov09               {printf("ោ");}      
 ov10               {printf("ៅ");}
 av12               {printf("ៅ");}       
 ad03/a14|" "       {printf("ែ");}  
